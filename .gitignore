@@ -1,0 +1,9 @@
+
+*/.metadata/*
+*/Remote*
+
+
+*.lock
+MavenWorkSpace/pradeepit-firstdemo-maven/target/classes/in/com/pradeepit/maven/Demo.class
+MavenWorkSpace/pradeepit-firstdemo-maven/target/test-classes/demo.properties
+MavenWorkSpace/pradeepit-firstdemo-maven/target/test-classes/in/com/pradeepit/maven/test/DemoTest.class
