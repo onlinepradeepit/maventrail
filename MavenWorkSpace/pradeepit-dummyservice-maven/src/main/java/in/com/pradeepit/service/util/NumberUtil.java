@@ -2,16 +2,19 @@ package in.com.pradeepit.service.util;
 
 import org.apache.commons.lang.Validate;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class NumberUtil.
+ */
 public class NumberUtil {
 
 	/**
-	 * @param number
-	 *            The number in plain format
-	 * @param mask
-	 *            The mask pattern. Use # to include the digit from the
+	 * Mask number.
+	 *
+	 * @param number            The number in plain format
+	 * @param mask            The mask pattern. Use # to include the digit from the
 	 *            position. Use x to mask the digit at that position. Any other
 	 *            char will be inserted.
-	 * 
 	 * @return The masked card number
 	 */
 	public static String maskNumber(String number, String mask) {
@@ -34,6 +37,12 @@ public class NumberUtil {
 		return masked.toString();
 	}
 
+	/**
+	 * Validate mask number.
+	 *
+	 * @param number the number
+	 * @param mask the mask
+	 */
 	private static void validateMaskNumber(String number, String mask) {
 
 		Validate.notNull(number, "Number must not be empty");
@@ -57,6 +66,13 @@ public class NumberUtil {
 		}
 	}
 
+	/**
+	 * Count repeat char.
+	 *
+	 * @param aStrValue the a str value
+	 * @param matchValue the match value
+	 * @return the int
+	 */
 	private static int countRepeatChar(String aStrValue, String matchValue) {
 		char charArrays[] = aStrValue.toCharArray();
 		int count = 0;
@@ -68,6 +84,11 @@ public class NumberUtil {
 		return count;
 	}
 
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 */
 	public static void main(String[] args) {
 		System.out.println(maskNumber("8105478242", "+91-### XX# ####"));
 	}
